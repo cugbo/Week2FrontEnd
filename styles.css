@@ -1,0 +1,394 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+.container{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.logo{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.ovals{
+    position: relative;
+    width: 2%;
+    width: 30px;
+    margin-right: .7%;
+    margin-top: -2%;
+}
+
+.oval1{
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.oval2{
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.intro{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.intro-txt{
+    display: none;
+}
+
+.left-images{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-left: -20px;
+}
+
+.right-images{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    /* margin-left: -10px; */
+}
+
+.img-grp{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    /* margin-right: 7px; */
+}
+
+.img-grp img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    margin-left: 12px;
+}
+
+.img-up{
+    margin-top: 50px;
+}
+
+.desktop-details{
+    display: none;
+}
+
+.mobile-details{
+    margin: 30px auto;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.mobile-details .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mobile-details .title h1{
+    font-size: 32px;
+    font-weight: 900;
+    color: #28283D;
+    font-style: normal;
+    line-height: 36px;
+
+}
+
+.mobile-details .title p{
+    width: 85%;
+    font-size: 16px;
+    line-height: 24px;
+    color: #87879D;
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+.mobile-details .title .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons button{ 
+    border-radius: 20px;
+    color: #fff;
+    outline: none;
+    border: none; 
+}
+
+.buttons .btn1{
+    background-color: #4D96A9;
+    padding: 14px 30px;
+    margin-bottom: 10px;
+}
+
+.btn1 span{
+    color: #8FE3F9;
+    margin-left: 5px;
+}
+
+.buttons .btn2{
+    background-color: #855FB1;
+    padding: 14px 10px;
+    width: 100px;
+}
+
+.tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+    margin-bottom: -50px;
+}
+
+.tag .line{
+    width: .5px;
+    height: 50px;
+    background-color: #b0b0c4;
+}
+
+.tag .round{
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #b0b0c4;
+    background-color: #fff ;
+}
+
+.galleries{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-1, .section-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.galleries img{
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.mr{
+    margin-right: 12px;
+}
+
+.bottom-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto ;
+}
+
+.details h3{
+    color: #4D96A9;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.details h1{
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.details p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #87879D;
+}
+
+.footer{
+    background-image: url("images/Bitmap\ \(4\).png");
+    background-color: #429db4;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.footer .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20%;
+    width: 85%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.title p{
+    width: 75%;
+}
+
+.footer .btn{
+    background-color: #855FB1;
+    padding: 14px 30px;
+}
+
+.footer .btn span{
+    color: #D9B8FF;
+    margin-left: 5px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .desktop-details{
+        display: block;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .desktop-details h1{
+        font-size: 50px;
+        letter-spacing: 2px;
+        line-height: 55px;
+    }
+
+    .desktop-details .tag{
+        margin-bottom: 10%;
+    }
+
+    .title p{
+        margin-left: 12%;
+        font-size: 18px;
+        color: #87879D;
+    }
+
+    .mobile-details{
+        display: none;
+    }
+
+    .img-grp img{
+        width: 100px !important;
+        height: 100px !important;
+        object-fit: contain;
+    }
+
+    .logo{
+        margin-top: 8%;
+    }
+
+    .galleries{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .galleries .section-1{
+        margin-right: 15px;
+    }
+
+    .galleries img{
+        width: 250px;
+        height: 250px;
+        object-fit: contain;
+    }
+
+    .bottom-details{
+        width: 45%;
+    }
+
+    .bottom-details p{
+        color: #87879D;
+        font-size: 16px;
+    }
+
+
+    .footer{
+        height: 500px ;
+        background-size: cover;
+    }
+
+    .footer .title{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .title h1{
+        align-items: left;
+    }
+
+    .title p{
+        color: #fff;
+        text-align: left;
+        width: 40%;
+    }
+
+    .title .buttons{
+        margin-left: 17%;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 600px) {
+    .desktop-details{
+        display: none;
+    }
+
+    .mobile-details{
+        display: block;
+    }
+
+    .galleries img{
+        width: 160px;
+        height: 160px;
+        object-fit: contain;
+    }
+
+    
+    .footer .title{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .title p{
+        color: #fff;
+        width: 70%;
+        text-align: center;
+        margin-right: 10%;
+        margin-top: 2%;
+        margin-bottom: 7%;
+    }
+
+    .title .buttons{
+        margin-left: 0;
+    }
+
+    .intro{
+        margin: 30px 0;
+    }
+
+    .bottom-details{
+        margin-top: 30px;
+    }
+
+    
+}
